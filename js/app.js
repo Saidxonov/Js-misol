@@ -273,3 +273,18 @@
 //   console.log("Katta son");
 // }
 // console.log("Siz kiritgan eng katta son:" + maksimal);
+
+//Agar raqam berilgan bo'lsa
+let userNumberOrWord = prompt("Qiymatni kiriting:");
+
+if (userNumberOrWord !== "" && userNumberOrWord.length > 0) {
+  let res = userNumberOrWord - 0 === +userNumberOrWord;
+
+  if (res) {
+    console.log("Bu raqam");
+  } else {
+    console.log("Bu raqam emas");
+  }
+} else {
+  console.log("Bu raqam emas");
+}
